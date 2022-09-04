@@ -3,4 +3,23 @@
 
 
 //COLORS
-$black: #000000
+$black: #000000;
+$background: #EDF5FB;
+$main-blue: #0AB1BB;
+$second-blue: rgba(10, 177, 187, 0.55);
+$red: #E85757;
+
+
+//ANIMATION
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
