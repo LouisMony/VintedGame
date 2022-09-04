@@ -23,3 +23,50 @@ $red: #E85757;
 		transform: translatey(0px);
 	}
 }
+
+.previous_arrow{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.main_input{
+    font-family: Poppins, sans-serif;
+    outline: none;
+    background: white;
+    color: $main-blue;
+    border: none;
+    padding: 15px 0 15px 15px;
+    width: 55%;
+    min-width: 231px;
+    font-weight: 600;
+    font-size: 14px;
+    box-shadow: 0px 10px 20px rgba(10, 177, 187, 0.26);
+    border-radius: 10px;
+
+    &::placeholder {
+      color: $second-blue;
+      font-weight: 400;
+    }
+}
+
+.main_button{
+    font-family: Poppins, sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    background: $main-blue;
+    text-align: center;
+    color: white;
+    border: none;
+    padding: 15px 0;
+    width: 55%;
+    min-width: 231px;
+    font-weight: 600;
+    font-size: 16px;
+    box-shadow: 0px 20px 30px rgba(10, 177, 187, 0.26);
+    border-radius: 10px;
+    transition: all 200ms linear;
+
+    &:hover{
+      background: #07858b;
+    }
+}

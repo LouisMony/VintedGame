@@ -3,8 +3,8 @@
     <img id="bonnet_image" src="@/assets/img/bonnet.png" alt="Bonnet">
     <img id="hoodie_image" src="@/assets/img/hoodie.png" alt="Hoodie">
     <h1>Bienvenue 👋</h1>
-    <button id="button_top" class="main_button">Créer un partie</button>
-    <button class="main_button">Rejoindre un partie</button>
+    <router-link id="button_top" class="main_button" to="/creer-une-partie">Créer un partie</router-link>
+    <router-link class="main_button" to="/rejoindre-une-partie">Rejoindre un partie</router-link>
   </div>
 </template>
 
@@ -16,6 +16,7 @@ export default {
 </script>
 
 <style lang="scss" scopped>
+@import "@/assets/style/_variables.scss";
 
 .home{
   height: 90%;
@@ -43,6 +44,15 @@ export default {
     font-weight: 700;
     font-size: 40px;
     padding-bottom: 50px;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 80%;
+      height: 1px;
+      bottom: 50px;
+      left: 10%;
+      background: $second-blue;
+    }
   }
 
   #button_top{
